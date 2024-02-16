@@ -13,7 +13,7 @@ router.get('/register', (req, res) => {
 
 router.get('/login', (req, res) => {
   console.log('GET /login ok');
-  res.send('Login page'); 
+  res.send('Login is ok'); 
 });
 
 router.get('/logout', (req, res) => {

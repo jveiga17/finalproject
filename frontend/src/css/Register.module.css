@@ -1,0 +1,47 @@
+.h1Intro {
+  font-family: "Pacifico", cursive;
+  font-size: 8vw;
+  color: #4682a9;
+}
+
+.h4Intro {
+  color: #4682a9;
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 30%;
+}
+
+input {
+  margin-bottom: 10px;
+  background-color: inherit; /* Matches the body's background color */
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc; /* Bottom border */
+  transition: border-bottom-color 0.3s ease; /* Transition effect for hover */
+  padding: 3%;
+}
+
+input:hover {
+  border-bottom-color: #4682a9; /* Change color on hover */
+}
+
+button {
+  background-color: inherit;
+  border-radius: 30px;
+  border: 1px solid #4682a9;
+  color: #4682a9;
+  cursor: pointer;
+  font-size: 1.5vw;
+  margin-top: 10px;
+  padding: 3%;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #356a8c; /* Darker background color on hover */
+  color: white;
+}
