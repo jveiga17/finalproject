@@ -49,12 +49,10 @@ router.post('/register', async (req, res) => {
   });
 
 // user login route
-router.post('/login', passport.authenticate('local', {
-  successRedirect: '/profile', // Redirect to homepage on successful login
-  failureRedirect: '/login', // Redirect to login page on failed login
-}), (req, res) => {
-  console.log('User logged in successfully:', req.user); // Log user details upon successful login
-});
+router.post('/login', passport.authenticate('local'),(req, res) => {
+  console.log(req.user)
+  res.send({ user: req.user })
+})
 
 
 module.exports = router;
