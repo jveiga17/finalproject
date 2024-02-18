@@ -37,7 +37,7 @@ const Profile = () => {
       <NavbarUser />
       <h1 className={styles.h1Intro}>Welcome, {capitalizedUsername}!</h1>
       {/* Render other profile information here */}
-      <h2>Your Selected Courses:</h2>
+      <h2>My Favourite Courses:</h2>
       <div className="course-card-container">
         {myCourses.map(course => (
           <CourseCard 

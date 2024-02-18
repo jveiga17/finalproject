@@ -7,7 +7,7 @@ import { selectCourse, deselectCourse } from '../../store/actions/courseActions'
 const BrazilCourses = () => {
   const dispatch = useDispatch(); // Initialize useDispatch hook
   const selectedCourses = useSelector(state => state.courses.selectedCourses); // Get selected courses from the Redux store
-  const brazilCourses = useSelector(state => state.courses.list.filter(course => course.branch === 'brazil'))
+  const brazilCourses = useSelector(state => state.courses.list.filter(course => course.branch === 'brazil')) //******************* */
 
   // Handle select course action
   const handleSelectCourse = (courseId) => {

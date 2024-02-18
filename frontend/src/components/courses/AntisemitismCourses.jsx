@@ -21,7 +21,7 @@ const AntisemitismCourses = () => {
 
   return (
     <div>
-      <h2>Brazil Courses</h2>
+      <h2>Antisemitism Courses</h2>
       <div className="course-card-container">
         {antisemitismCourses.map(course => (
           <CourseCard
