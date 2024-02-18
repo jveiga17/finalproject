@@ -23,6 +23,9 @@ const Register = () => {
             // Send formData to server for registration using Axios
             const response = await axios.post('http://localhost:5000/register', formData);
             console.log(response.data); // Log the response from the backend
+
+            // redrecting after successful registration
+            window.location.href = '/login';
         } catch (error) {
             console.error('Error registering user:', error);
         }

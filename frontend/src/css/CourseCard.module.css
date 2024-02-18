@@ -18,3 +18,8 @@
   width: 25vw;
   border-radius: 50%;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
