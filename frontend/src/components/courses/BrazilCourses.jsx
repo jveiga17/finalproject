@@ -22,7 +22,7 @@ const BrazilCourses = () => {
   return (
     <div>
       <h2>Brazil Courses</h2>
-      <div className="course-card-container">
+      <div className="course-card-container" >
         {brazilCourses.map(course => (
           <CourseCard
             key={course.id}

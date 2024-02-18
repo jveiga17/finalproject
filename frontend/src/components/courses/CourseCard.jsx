@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../css/CourseCard.module.css'
 
 const CourseCard = ({ course, isSelected, onSelect, onDeselect, buttonText }) => {
   console.log('CourseCard props:', course, isSelected, buttonText);
@@ -9,15 +10,17 @@ const CourseCard = ({ course, isSelected, onSelect, onDeselect, buttonText }) =>
   }
 
   return (
-    <div>
-      <img src={course.imageUrl} alt={course.name} />
-      <h3>{course.name}</h3>
-      <p>{course.description}</p>
-      {isSelected ? (
-        <button onClick={onDeselect}>Deselect</button>
-      ) : (
-        <button onClick={onSelect}>{buttonText || "Select"}</button>
-      )}
+    <div className={styles.container}>
+      <div className={styles.card}> 
+        <img className={styles.image} src={course.imageUrl} alt={course.name} />
+        <h3>{course.name}</h3>
+        <p>{course.description}</p>
+        {isSelected ? (
+          <button onClick={onDeselect}>Deselect</button>
+        ) : (
+          <button onClick={onSelect}>{buttonText || "Select"}</button>
+        )}
+      </div>
     </div>
   );
 };
