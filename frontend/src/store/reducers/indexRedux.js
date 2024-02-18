@@ -7,7 +7,7 @@ import courseReducer from './courseReducer';
 // Combine reducers
 const rootReducer = combineReducers({
   auth: authReducer,
-  courses: courseReducer, // Add courses reducer
+  courses: courseReducer, 
 });
 
 // Create the Redux store

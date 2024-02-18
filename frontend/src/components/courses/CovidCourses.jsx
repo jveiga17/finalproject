@@ -1,4 +1,3 @@
-// BrazilCourses.jsx
 import React from 'react';
 import CourseCard from './CourseCard';
 import { useDispatch, useSelector } from 'react-redux'; // Import useDispatch and useSelector hooks

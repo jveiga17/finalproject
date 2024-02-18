@@ -10,6 +10,7 @@ import Register from './components/auth/RegisterFront';
 import BrazilCourses from './components/courses/BrazilCourses';
 import AntisemitismCourses from './components/courses/AntisemitismCourses';
 import CovidCourses from './components/courses/CovidCourses';
+import CovidData from './components/courses/CovidData';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/brazil-courses" element={<BrazilCourses />} />
         <Route exact path="/antisemitism-courses" element={<AntisemitismCourses />} />
         <Route exact path="/covid-courses" element={<CovidCourses />} />
+        <Route exact path="/covid-data" element={<CovidData />} />
       </Routes>
     </Router>
   );
