@@ -18,7 +18,7 @@
   z-index: 999;
 }
 
-.navbarBrand a {
+.navbarBrand h1 {
   color: #4682a9;
   font-family: "Pacifico", cursive;
   font-size: 4.5vw;
@@ -35,7 +35,6 @@ button.dropbtn {
   display: flex;
   padding: 2%;
   margin: 0 2vw;
-  transition: 0.5s;
 }
 
 .navLink a,

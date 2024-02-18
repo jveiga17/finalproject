@@ -1,0 +1,25 @@
+// frontend/src/components/courses/CoursesList.jsx
+import React from 'react';
+import { useSelector } from 'react-redux';
+import CourseCard from './CourseCard';
+
+const CoursesList = () => {
+  // Retrieve the courses from the Redux store
+  const courses = useSelector(state => state.courses);
+
+  // Check if courses is not undefined or null before mapping over it
+  if (!courses) {
+    return <p>No courses available</p>;
+  }
+
+  return (
+    <div>
+      <h2>Available Courses</h2>  
+      {courses.map(course => (
+        <CourseCard key={course.id} course={course} />
+      ))}
+    </div>
+  );
+};
+
+export default CoursesList;
